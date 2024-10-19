@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+@font-face {
+  font-family: kame;
+  src: url(Kame_Poster_Black.woff);
+}
+
+/* variables */
+:root {
+  --font-family: "kame";
+  --normal-font: 400;
+  --bold-font: 700;
+  --bolder-font: 900;
+  --bg-color: #fcfcfc;
+  --primary-color: #4756df;
+  --secondary-color: #ff7235;
+  --primary-shadow: #8b8eaf;
+  --secondary-shadow: #a17a69;
+  --bottom-margin: 0.5rem;
+  --bottom-margin-2: 1rem;
+  --line-height: 1.7rem;
+  --transition: 0.3s;
+}
+
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+
+
+/* header */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+body {
+  font-family: var(--font-family);
+  height: 100%;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4vh 4vw;
+    border-bottom: solid;
+    z-index: -1;
+
+    
+  }
+
+  nav h1 {
+    color: var(--primary-color);
+  }
+  
+  nav a {
+    color: var(--primary-color);
+    transition: var(--transition);
+    font-size: 1.5em;
+  }
+  nav a:hover {
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 1.9rem;
+  }
+  
+  nav ul li {
+    font-weight: var(--bold-font);
+  }
+
+  .burger-menu {
+    color: var(--primary-color);
+    font-size: 2rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+  }
+
+
+
+#particles-js { 
+  font-family: monospace;
+  border-bottom: solid;
+  position: relative;
+  height: 60vh;
+  width: 100vw;
+  z-index: 1;
+  
+}
+
+
+#type {
+  width: 100vw;
+  position:absolute;
+  font-size: 1.3rem;
+  text-align: center;
+  margin-top: 30vh;
+
+}
+
+
+
+/* education */
+
+.work {
+  font-family: monospace;
+  display: flex;
+  justify-content: center;
+  padding-top: 10vh;
+}
+
+.work h2{
+  padding-top: 4rem;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.work h3 {
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.work img {
+  width: 10vw;
+  
+  margin-left: 7vw;
+}
+
+.work h4 {
+  margin-left: 12vw;
+}
+
+
+
+  /* footer */
+
+  .footer {
+    margin-top: 150px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 45px 15%;
+    margin: 2rem 0 0;
+    display: flex;
+ }
+
+    .footer div {
+        text-align: right;
+    }
+
+    .social {
+        flex-grow: 2;
+        justify-content: center;
+        
+    }
+
+    .social a{
+        text-decoration: none;
+        padding:  10px;
+        transition: transform 0.3s ease;
+        margin: 10px;
+        border-radius: 50%;
+        
+    }
+    .social a i{
+        font-size: 3em;
+        color: rgb(107, 2, 255);
+        opacity: 0,9;
+       
+    }
+
+    .copyright p {
+      color: black;
+        text-align: left;
+        font-family: monospace;
+        font-weight: bold;
+        font-size: medium;
+        
+    }
+
